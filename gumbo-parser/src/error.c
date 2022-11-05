@@ -96,8 +96,8 @@ static void print_tag_stack (
     if (i) {
       print_message(output, ", ");
     }
-    GumboTag tag = (GumboTag) error->tag_stack.data[i];
-    print_message(output, "%s", gumbo_normalized_tagname(tag));
+    #GumboTag tag = (GumboTag) error->tag_stack.data[i];
+    #print_message(output, "%s", gumbo_normalized_tagname(tag));
   }
   gumbo_string_buffer_append_codepoint('.', output);
 }
